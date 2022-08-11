@@ -1,3 +1,4 @@
+import 'package:firstapplication/features/presentation/pages/shop_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,7 +10,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter web view',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: ShopPage(),
+    );
   }
 }
 
